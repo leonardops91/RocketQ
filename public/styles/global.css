@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    --linear: linear-gradient(195.96deg, #5498FF -122.01%, #428EFF -8.36%, #297FFF 98.4%);
+    --dark: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons: #A5B0C1;
+    --dark-grey: #4D5E77;
+    --blue-grey: #A1B2CD;
+    --medium-grey: #D3D9E2;
+    --light-grey: #E5EAF1;
+    -hover-blue: #5699FF;
+    --hover-red: #EA4B65;
+    --hover-grey: #8794A7;
+    font-size: 62.5%;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+}
+
+header>img {
+    width: 16.7rem;
+    margin: 3.5rem auto;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body, button, input, .button, .blue-button {
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+button, input, .button, .blue-button {
+    height: 5rem;
+    border-radius: .8rem;
+}
+
+.hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+button, .button, .blue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    transition: filter 0.2s;
+}
+
+button:hover, .button:hover, .blue-button:hover {
+    filter: brightness(1.2);
+}
+
+button>img, .button>img, .blue-button>img {
+    margin-right: 1rem;
+}
+
+button, .blue-button {
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.button {
+    background: var(--white);
+    border: .2rem solid var(--blue);
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.button.grey {
+    width: 13.9rem;
+    background: var(--light-grey);
+    border: 0;
+    color: var(--dark-grey);
+}
+
+.button.grey:hover {
+    filter: brightness(0.9);
+}
+
+button.red {
+    width: 13.9rem;
+    height: 5rem;
+    background: var(--red);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    font-size: clamp(20px, 5vw, 2.8rem);
+}
+
+::-webkit-input-placeholder {
+    color: var(--blue-grey);
+    font-size: 1.6rem;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: var(--blue-grey);
+    font-size: 1.6rem;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: var(--blue-grey);
+    font-size: 1.6rem;
+}
+
+:-ms-input-placeholder {
+    color: var(--blue-grey);
+    font-size: 1.6rem;
+}
