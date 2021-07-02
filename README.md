@@ -1,5 +1,5 @@
 <h1 align="center" style="background: white; padding: 10px; border-radius: 8px">
-  <img alt="Rocket.Q" title="Rocket.Q" src="./public/assets/logo.png" width="220px" />
+  <img alt="Rocket.Q" title="Rocket.Q" src=".github/logo.png" width="220px" />
 </h1>
 
 <p align="center">
@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img style="border-radius: 8px" alt="Rocket.Q" src="./public/assets/home.png" width="100%">
+  <img style="border-radius: 8px" alt="Rocket.Q" src=".github/home.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
